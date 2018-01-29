@@ -60,3 +60,9 @@ hc
 <br>
 <small>[Metodología](https://www.youtube.com/watch?v=Qn4esVrGjhI) | [Soundtrack](https://www.youtube.com/watch?v=Qn4esVrGjhI)</small>
 
+<a href="https://github.com/rafalopezv/MAS.mapa.transitivo/tree/master"><i class="fa fa-github fa-xs"></i></a>
+<a href="mailto:lopezvalverde.rafael@gmail.com"><i class="fa fa-envelope fa-xs"></i></a>
+<a href="https://www.linkedin.com/in/rafael-lopez-valverde-a141a325/"><i class="fa fa-linkedin fa-xs"></i></a>
+<a href="https://twitter.com/rafa_lopezv"><i class="fa fa-twitter fa-xs"></i></a>
+<a href="https://www.facebook.com/profile.php?id=585845584"><i class="fa fa-facebook fa-xs"></i></a>
+
