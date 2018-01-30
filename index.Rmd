@@ -3,7 +3,7 @@ title:
 output: html_document
 ---
 <br>
-<center><h4>15 años, 10 procesos: Apoyo electoral a Evo Morales y MAS-IPSP</h4></center>
+<center><h4>15 años, 10 procesos: Apoyo electoral a Evo Morales y al MAS-IPSP</h4></center>
 <br>
 ```{r setup, include=F, echo=F}
 
@@ -28,13 +28,14 @@ ds1 <- a %>%
 
 hc <- highchart(type = "map") %>% 
   hc_add_series(data = ds1,
-                name = "Porcentaje de votos EVO/MAS-IPSP",
+                name = "Porcentaje de votos a favor de Evo Morales y/o MAS-IPSP",
                 mapData = mun,
                 joinBy = "CODIGO",
-                borderWidth = 0.01) %>% 
+                borderWidth = 0.01,
+                tooltip = list(valueDecimals = 2, valueSuffix = " %")) %>% 
   hc_colorAxis(stops = color_stops()) %>%  
-  hc_legend(layout = "vertical", reversed = TRUE,
-            floating = TRUE, align = "right") %>% 
+  hc_legend(layout = "horizontal", reversed = TRUE,
+            floating = TRUE, align = "right", valueSuffix = "%") %>% 
   hc_add_theme(hc_theme_smpl()) %>% 
   hc_motion(enabled = TRUE, loop = FALSE, autoPlay = TRUE,
     axisLabel = "año",
@@ -58,9 +59,9 @@ hc
 <center><img src="img.png" style="background:none; border:none; box-shadow:none;" height="100" width="700px"></center>
 <br>
 <br>
-<small>[Metodología](https://www.youtube.com/watch?v=Qn4esVrGjhI) | [Soundtrack](https://www.youtube.com/watch?v=Qn4esVrGjhI)</small>
+<small>[Metodología](https://rafalopezv.github.io/metodologia.mapa.transitivo/) | [Soundtrack](https://www.youtube.com/watch?v=Qn4esVrGjhI)</small>
 
-<a href="https://github.com/rafalopezv/MAS.mapa.transitivo/tree/master"><i class="fa fa-github fa-xs"></i></a>
+rafa lópez v. <a href="https://github.com/rafalopezv/MAS.mapa.transitivo/tree/master"><i class="fa fa-github fa-xs"></i></a>
 <a href="mailto:lopezvalverde.rafael@gmail.com"><i class="fa fa-envelope fa-xs"></i></a>
 <a href="https://www.linkedin.com/in/rafael-lopez-valverde-a141a325/"><i class="fa fa-linkedin fa-xs"></i></a>
 <a href="https://twitter.com/rafa_lopezv"><i class="fa fa-twitter fa-xs"></i></a>
